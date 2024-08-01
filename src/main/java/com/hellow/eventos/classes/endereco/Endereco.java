@@ -18,8 +18,8 @@ public class Endereco {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-
-    private Integer id;
+    @Column(name = "id")
+    private Integer id_endereco;
     private String logradouro;
     private String nome;
     private Integer numero;
@@ -31,5 +31,6 @@ public class Endereco {
     private String complemento;
 
     @ManyToOne
+    @JoinColumn(name = "id_tipo")
     private Tipo tipo;
 }
