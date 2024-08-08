@@ -19,18 +19,18 @@ public class Endereco {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "id")
-    private Integer id_endereco;
+    private Integer endereco_id;
     private String logradouro;
     private String nome;
     private Integer numero;
     private String  cep;
-    private String bairro;
+    private String bairo;
     private String cidade;
     private String estado;
     private String pais;
     private String complemento;
 
     @ManyToOne
-    @JoinColumn(name = "id_tipo")
+    @JoinColumn(name = "tipo_id")
     private Tipo tipo;
 }
