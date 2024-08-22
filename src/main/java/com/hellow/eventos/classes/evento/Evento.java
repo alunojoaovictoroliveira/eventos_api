@@ -29,9 +29,9 @@ public class Evento {
 
     @ManyToOne
     @JoinColumn(name = "endereco_id")
-    private Endereco endereco;
+    private Endereco endereco_id;
     @ManyToOne
     @JoinColumn(name = "tipo_id")
-    private Tipo tipo;
+    private Tipo tipo_id;
 
 }

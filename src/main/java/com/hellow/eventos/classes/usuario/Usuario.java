@@ -44,7 +44,7 @@ public class Usuario {
 
     @ManyToOne
     @JoinColumn(name = "tipo_id")
-    private Tipo tipo;
+    private Tipo tipo_id;
 
 
 }
